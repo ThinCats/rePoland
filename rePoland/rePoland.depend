@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1511830325 source:d:\git\repoland\repoland\main.c
+	<stdio.h>
+	"user_stack.h"
+
+1511830640 d:\git\repoland\repoland\user_stack.h
+
+1511830640 source:d:\git\repoland\repoland\user_stack.c
+	"user_stack.h"
+	<stdio.h>
+
