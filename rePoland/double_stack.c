@@ -1,11 +1,10 @@
 
-#include "user_stack.h"
+#include "double_stack.h"
 
-user_stacks gen = {0};
-char exp[100];
+double_stacks out = {0};
 
 //get top without deleting
-char getTop(user_stacks * s)
+double dgetTop(double_stacks * s)
 {
     if(s->top == 0)
         return '\0';
@@ -15,7 +14,7 @@ char getTop(user_stacks * s)
 }
 
 //getTop and delete
-char pop(user_stacks * s)
+double dpop(double_stacks * s)
 {
     if(s->top == 0)
         return '\0';
@@ -28,14 +27,14 @@ char pop(user_stacks * s)
 }
 
 //push an element in it;
-void push(user_stacks * s, char n)
+void dpush(double_stacks * s, double n)
 {
     s->stacks[s->top] = n;
     s->top++;
 }
 
 //Clear
-void clearStack(user_stacks * s)
+void dclearStack(double_stacks * s)
 {
     s->top = 0;
 }

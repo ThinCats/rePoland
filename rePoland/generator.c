@@ -2,7 +2,7 @@
 
 char * rePolandExp(char * in)
 {
-
+    clearStack(&gen);
 
     int i = 0;
     int j = 0;

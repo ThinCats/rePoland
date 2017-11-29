@@ -31,6 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="calculator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="calculator.h" />
+		<Unit filename="double_stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="double_stack.h" />
+		<Unit filename="generator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="generator.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

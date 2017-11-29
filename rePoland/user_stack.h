@@ -3,7 +3,6 @@
 
 struct user_stacks
 {
-
     int top;
     char stacks[100];
 };
@@ -22,5 +21,7 @@ char pop(user_stacks * s);
 
 //push an element in it;
 void push(user_stacks * s, char n);
+
+void clearStack(user_stacks * s);
 
 #endif // _STACK_
