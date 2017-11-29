@@ -1,11 +1,18 @@
 # depslib dependency file v1.0
-1511830325 source:d:\git\repoland\repoland\main.c
+1511932158 source:d:\git\repoland\repoland\main.c
+	<stdio.h>
+	"generator.h"
+
+1511932323 d:\git\repoland\repoland\user_stack.h
+
+1511878738 source:d:\git\repoland\repoland\user_stack.c
+	"user_stack.h"
+	<stdio.h>
+
+1511931878 source:d:\git\repoland\repoland\generator.c
+	"generator.h"
+
+1511931761 d:\git\repoland\repoland\generator.h
 	<stdio.h>
 	"user_stack.h"
-
-1511830640 d:\git\repoland\repoland\user_stack.h
-
-1511830640 source:d:\git\repoland\repoland\user_stack.c
-	"user_stack.h"
-	<stdio.h>
 

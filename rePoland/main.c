@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include "user_stack.h"
+#include "generator.h"
 
 int main(void)
 {
-    gen.stacks[0] = '*';
-    gen.stacks[1] = '/';
-    gen.top = 2;
+    printf("Please input the expressions:(Like 4 * (3 - 2))\n");
+    char in[100];
+    gets(in);
 
-    char c = pop(&gen);
-    putchar(c);
-    printf("%d\n", gen.top);
+    char *exp1 = rePolandExp(in);
 
-    c = getTop(&gen);
-    putchar(c);
-    printf("%d\n", gen.top);
+    //Output:
+    printf("\nThe rePoland expression is:\n%s\n", exp1);
 
-    push(&gen, '&');
-    c = getTop(&gen);
-    putchar(c);
-    printf("%d\n", gen.top);
+    //Calculate:
+    //printf("\nThe result is: %f\n");
+
 }

@@ -1,8 +1,8 @@
 
 #include "user_stack.h"
-#include<stdio.h>
 
 user_stacks gen = {0};
+char exp[100];
 
 //get top without deleting
 char getTop(user_stacks * s)
@@ -17,12 +17,13 @@ char getTop(user_stacks * s)
 //getTop and delete
 char pop(user_stacks * s)
 {
-    if(s->top==0)
+    if(s->top == 0)
         return '\0';
     else
     {
-        return s->stacks[s->top-1];
         s->top--;
+        return s->stacks[s->top];
+
     }
 }
 

@@ -11,7 +11,8 @@ struct user_stacks
 typedef struct user_stacks user_stacks;
 
 extern user_stacks gen;
-extern user_stacks out;
+extern char exp[100];
+
 
 //get top without deleting
 char getTop(user_stacks * s);
